@@ -4,20 +4,29 @@
 	<meta charset="utf-8">
 	<title></title>
 <style>
+div{
+	padding: 5px;
+}
 <!--
  /* Font Definitions */
  @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
 	{font-family:宋体;
 	panose-1:2 1 6 0 3 1 1 1 1 1;}
 @font-face
 	{font-family:"Cambria Math";
 	panose-1:2 4 5 3 5 4 6 3 2 4;}
 @font-face
-	{font-family:"Calibri Light";
-	panose-1:2 15 3 2 2 2 4 3 2 4;}
-@font-face
 	{font-family:Calibri;
 	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"\@微软雅黑";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
 @font-face
 	{font-family:"\@宋体";
 	panose-1:2 1 6 0 3 1 1 1 1 1;}
@@ -31,76 +40,80 @@
 	font-family:"Calibri","sans-serif";}
 h1
 	{mso-style-link:"标题 1 Char";
-	margin-top:17.0pt;
 	margin-right:0cm;
-	margin-bottom:16.5pt;
 	margin-left:0cm;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	line-height:240%;
-	page-break-after:avoid;
-	font-size:22.0pt;
-	font-family:"Calibri","sans-serif";}
+	font-size:24.0pt;
+	font-family:宋体;
+	font-weight:bold;}
 h2
 	{mso-style-link:"标题 2 Char";
-	margin-top:13.0pt;
 	margin-right:0cm;
-	margin-bottom:13.0pt;
 	margin-left:0cm;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	line-height:173%;
-	page-break-after:avoid;
-	font-size:16.0pt;
-	font-family:"Calibri Light","sans-serif";}
+	font-size:18.0pt;
+	font-family:宋体;
+	font-weight:bold;}
 h3
 	{mso-style-link:"标题 3 Char";
-	margin-top:13.0pt;
 	margin-right:0cm;
-	margin-bottom:13.0pt;
 	margin-left:0cm;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	line-height:173%;
-	page-break-after:avoid;
-	font-size:16.0pt;
+	font-size:13.5pt;
+	font-family:宋体;
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"页眉 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	layout-grid-mode:char;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
 	font-family:"Calibri","sans-serif";}
-h4
-	{mso-style-link:"标题 4 Char";
-	margin-top:14.0pt;
-	margin-right:0cm;
-	margin-bottom:14.5pt;
-	margin-left:0cm;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	line-height:156%;
-	page-break-after:avoid;
-	font-size:14.0pt;
-	font-family:"Calibri Light","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"页脚 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Calibri","sans-serif";}
 a:link, span.MsoHyperlink
-	{color:#0563C1;
+	{color:blue;
 	text-decoration:underline;}
 a:visited, span.MsoHyperlinkFollowed
-	{color:#954F72;
+	{color:purple;
 	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:宋体;}
 span.1Char
 	{mso-style-name:"标题 1 Char";
 	mso-style-link:"标题 1";
+	font-family:宋体;
 	font-weight:bold;}
 span.2Char
 	{mso-style-name:"标题 2 Char";
 	mso-style-link:"标题 2";
-	font-family:"Calibri Light","sans-serif";
+	font-family:宋体;
 	font-weight:bold;}
 span.3Char
 	{mso-style-name:"标题 3 Char";
 	mso-style-link:"标题 3";
+	font-family:宋体;
 	font-weight:bold;}
-span.4Char
-	{mso-style-name:"标题 4 Char";
-	mso-style-link:"标题 4";
-	font-family:"Calibri Light","sans-serif";
-	font-weight:bold;}
+span.wxtaplink
+	{mso-style-name:wx_tap_link;}
+span.richmediameta
+	{mso-style-name:rich_media_meta;}
+span.wxprofiletipsmeta
+	{mso-style-name:wx_profile_tips_meta;}
+span.Char
+	{mso-style-name:"页眉 Char";
+	mso-style-link:页眉;}
+span.Char0
+	{mso-style-name:"页脚 Char";
+	mso-style-link:页脚;}
 .MsoChpDefault
 	{font-family:"Calibri","sans-serif";}
  /* Page Definitions */
@@ -110,265 +123,572 @@ span.4Char
 	layout-grid:15.6pt;}
 div.WordSection1
 	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
 -->
 </style>
 
 </head>
 
-<body lang=ZH-CN link="#0563C1" vlink="#954F72" style='text-justify-trim:punctuation'>
+<body lang=ZH-CN link=blue vlink=purple style='text-justify-trim:punctuation'>
 
 <div class=WordSection1 style='layout-grid:15.6pt'>
 
-<h1><span style='font-family:宋体'>部分参考</span></h1>
-
-<p class=MsoNormal><span lang=EN-US>https://gitee.com/ysgdaydayup/Awesome-Tools</span></p>
-
-<h1><span style='font-family:宋体'>编程工具</span></h1>
-
-<h2><span style='font-family:宋体'>编辑器</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Vscode,&nbsp; sublime,&nbsp; notepad,&nbsp;
-idea,&nbsp; vs,&nbsp; hbuilderx</span></p>
-
-<h2><span style='font-family:宋体'>扩展包</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Fittencode, &nbsp;marscode, &nbsp;Devexpress,
-&nbsp;spring initializr - <a href="https://start.spring.io/">https://start.spring.io/</a>,
-&nbsp;node.js, echart.js</span><span style='font-family:宋体'>，百度富文本，</span><span
-lang=EN-US>sp-editor-https://sv-app-docs.pages.dev/src/plugins/sp-editor/sp-editor,</span></p>
-
-<p class=MsoNormal><span lang=EN-US>maven</span></p>
-
-<h2><span style='font-family:宋体'>数据库管理</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Navicate,&nbsp; tableplus,&nbsp; dbeaver</span><span
-style='font-family:宋体'>，</span><span lang=EN-US>sqllite, &nbsp;<span
-style='color:red'>redis</span></span></p>
-
-<h2><span style='font-family:宋体'>抓包，调试</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Fiddler,&nbsp; Charles</span><span
-style='font-family:宋体'>，</span><span lang=EN-US>wireshark</span></p>
-
-<h2><span lang=EN-US>API</span><span style='font-family:宋体'>管理</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Apipost</span><span style='font-family:
-宋体'>，</span><span lang=EN-US>apifox, &nbsp;postman</span></p>
-
-<h2><span style='font-family:宋体'>编程相关，文档</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Axure, &nbsp;git, &nbsp;gitlab, &nbsp;markdown,
-&nbsp;phpstudy</span></p>
-
-<h2><span class=2Char><span style='font-family:宋体;font-weight:normal'>反</span></span><span
-style='font-family:宋体'>编</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>ILSpy, </span></p>
-
-<h2><span style='font-family:宋体'>大数据</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Java-
-https://java.p2hp.com/download/releases/</span></p>
-
-<p class=MsoNormal><span lang=EN-US>Flink-
-https://archive.apache.org/dist/flink/, &nbsp;flink sql, &nbsp;flink sql cdc</span></p>
-
-<p class=MsoNormal><span lang=EN-US>flink cdc-
-https://nightlies.apache.org/flink/flink-cdc-docs-release-3.1/zh/</span><span
-style='font-family:宋体'>，</span> </p>
-
-<p class=MsoNormal><span lang=EN-US>starRocks- <a
-href="https://www.starrocks.io/">https://www.starrocks.io/</a>&nbsp; ; <a
-href="https://github.com/StarRocks/starrocks-connector-for-apache-flink">https://github.com/StarRocks/starrocks-connector-for-apache-flink</a></span></p>
-
-<h2><span style='font-family:宋体'>爬虫</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Scrapy, &nbsp;puppeteer- https://www.cnblogs.com/xy-ouyang/p/12244505.html</span></p>
-
-<h2><span style='font-family:宋体;color:red'>性能压测</span></h2>
-
-<p class=MsoNormal><span lang=EN-US style='color:red'>Jmeter</span><span
-style='font-family:宋体;color:red'>，</span><span lang=EN-US style='color:red'>RunnerGo</span></p>
-
-<h2><span style='font-family:宋体;color:red'>代码格式化工具</span></h2>
-
-<p class=MsoNormal><span style='font-family:宋体'>在线代码格式化，</span><span
-lang=EN-US>csharpier, &nbsp;codemaid</span></p>
-
-<h1><span style='font-family:宋体'>运维工具</span></h1>
-
-<h2><span style='font-family:宋体'>远程工具，</span><span lang=EN-US>SSH</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Rustdesk,&nbsp; windterm,&nbsp; securcrt, &nbsp;mobaxterm_chs,&nbsp;
-winscp,&nbsp; ip</span><span style='font-family:宋体'>扫描，</span><span lang=EN-US>inletexEMC,
-UltraVNC</span></p>
-
-<h2><span style='font-family:宋体'>系统运维</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>CPU</span><span style='font-family:宋体'>温度检测</span><span
-lang=EN-US>, vmware vcenter converter, </span><span style='font-family:宋体'>大白菜，老毛桃，</span><span
-lang=EN-US>winpe, diskgenius, vmware-workstation, </span><span
-style='font-family:宋体'>激活工具，</span><span lang=EN-US> procexp</span><span
-style='font-family:宋体'>进程管理，</span><span lang=EN-US>advanced office password
-recovery,&nbsp; ipscan,&nbsp; windbg</span></p>
-
-<h2><span style='font-family:宋体'>文件探索</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Everything</span></p>
-
-<h2><span style='font-family:宋体'>文件同步工具</span></h2>
-
-<p class=MsoNormal><span lang=EN-US style='color:red'>localSend, &nbsp;FreeFileSync</span></p>
-
-<h2><span style='font-family:宋体'>模拟交换机</span></h2>
-
-<p class=MsoNormal><span style='font-family:宋体'>华为，思科，华三</span></p>
-
-<h1><span style='font-family:宋体'>办公类</span></h1>
-
-<h2><span style='font-family:宋体'>可视化</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>mindmanager,</span></p>
-
-<h2><span style='font-family:宋体'>图像类</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>imageMagick, &nbsp;ps, </span><span
-style='font-family:宋体'>精雕，</span><span lang=EN-US>CorelDRAW12.CHS,cad</span><span
-style='font-family:宋体'>，</span><span lang=EN-US>LibreCAD</span><span
-style='font-family:宋体'>，图像生成</span><span lang=EN-US>asc – ascgen</span></p>
-
-<h2><span style='font-family:宋体'>音视频类</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Ffmpeg-
-https://github.com/BtbN/FFmpeg-Builds,&nbsp; mp3tag, </span><span
-style='font-family:宋体'>狸窝，</span><span lang=EN-US>vlc, </span><span
-style='font-family:宋体'>音频转换，</span><span lang=EN-US>free video converter</span></p>
-
-<h2><span style='font-family:宋体'>音乐播放器</span></h2>
-
-<p class=MsoNormal><span lang=EN-US style='color:red'>yesPlayMusic, &nbsp;MusicPlayer2</span></p>
-
-<h2><span style='font-family:宋体'>录屏</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Evcapture,&nbsp; pointofix</span></p>
-
-<h2><span style='font-family:宋体'>截图工具</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Snipaste,&nbsp; pixpin,&nbsp; shareX,&nbsp;
-ScreenToGif,&nbsp; faststone</span></p>
-
-<h2><span style='font-family:宋体'>下载</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Motrix</span></p>
-
-<h2><span style='font-family:宋体'>辅助</span></h2>
-
-<p class=MsoNormal><span style='font-family:宋体'>晨光文件类型转换，</span> <span
-lang=EN-US>pdf</span><span style='font-family:宋体'>转</span><span lang=EN-US>cad,&nbsp;
-DWG DXF DWF</span><span style='font-family:宋体'>通用转换器</span><span lang=EN-US>,&nbsp;
-excel</span><span style='font-family:宋体'>函数学习，</span> <span lang=EN-US>DWG
-TrueView 2022 – cad</span><span style='font-family:宋体'>版本转换</span> </p>
-
-<h1><span lang=EN-US>AI</span></h1>
-
-<h2><span style='font-family:宋体'>常用工具</span></h2>
-
-<p class=MsoNormal><span lang=EN-US>Gradio- <a
-href="https://www.gradio.app/guides/frontend">https://www.gradio.app/guides/frontend</a></span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>旷视</span><span lang=EN-US>- <a
-href="https://console.faceplusplus.com.cn/login">https://console.faceplusplus.com.cn/login</a></span></p>
-
-<p class=MsoNormal><span lang=EN-US>ASCII-generator-https://github.com/vietnh1009/ASCII-generator</span></p>
-
-<h2><span lang=EN-US>OCR</span><span style='font-family:宋体'>工具</span></h2>
-
-<p class=MsoNormal><span lang=EN-US style='color:red'>Stranslate, &nbsp;Umi-OCR</span></p>
-
-<h1><span style='font-family:宋体'>资料</span></h1>
-
-<h2><span style='font-family:宋体'>常用网址</span></h2>
-
-<p class=MsoNormal><span style='font-family:宋体'>掘金</span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>文心一言</span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>豆包</span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>通义</span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>文叔叔</span></p>
-
-<p class=MsoNormal><span lang=EN-US>Deepseek</span></p>
-
-<p class=MsoNormal><span lang=EN-US>Mvn</span><span style='font-family:宋体'>仓库</span><span
-lang=EN-US>- <a href="https://mvnrepository.com/">https://mvnrepository.com/</a></span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>去图背景</span><span lang=EN-US>- <a
-href="https://www.remove.bg/zh/upload">https://www.remove.bg/zh/upload</a></span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>智能扩图</span><span lang=EN-US>- <a
-href="https://www.ff.cn/ai/wideTu.html">https://www.ff.cn/ai/wideTu.html</a></span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>在线时间戳转换</span><span lang=EN-US>-http://shijianchuo.wiicha.com/</span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>在线</span><span lang=EN-US>excel</span><span
-style='font-family:宋体'>转</span><span lang=EN-US>json-https://wejson.cn/excel2json/</span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>在线位图转矢量图</span><span
-lang=EN-US>-https://img.logosc.cn/vectorize</span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>矢量图编辑制作</span><span lang=EN-US>-
-<a href="https://svgedit.netlify.app/editor/index.html">https://svgedit.netlify.app/editor/index.html</a></span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>图像转</span><span lang=EN-US>ico-
-https://convertio.co/zh/</span></p>
-
-<p class=MsoNormal><span lang=EN-US>Linux</span><span style='font-family:宋体'>操作</span><span
-lang=EN-US>-https://www.cuiliangblog.cn/detail/section/31468290</span></p>
-
-<p class=MsoNormal><span lang=EN-US>git</span><span style='font-family:宋体'>仓库</span><span
-lang=EN-US>-https://gitee.com/yoho00/demo.git</span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>打字练习</span><span lang=EN-US>- <a
-href="https://dazi.91xjr.com/">https://dazi.91xjr.com/</a></span></p>
-
-<p class=MsoNormal><span style='font-family:宋体'>力扣</span><span lang=EN-US>- <a
-href="https://leetcode.cn/">https://leetcode.cn/</a></span></p>
-
-<p class=MsoNormal><span lang=EN-US>Datafountain- https://www.datafountain.cn/</span></p>
-
-<h2><span style='font-family:宋体'>开源项目</span></h2>
-
-<p class=MsoNormal><span style='font-family:宋体'>证件照制作</span><span lang=EN-US>- https://github.com/Zeyi-Lin/HivisionIDPhotos</span></p>
-
-<h1><span style='font-family:宋体'>小技巧</span></h1>
-
-<h2><span lang=EN-US>Phthon</span></h2>
-
-<h3><span style='font-family:宋体'>视频转图片</span></h3>
-
-<h3><span lang=EN-US>Base64</span><span style='font-family:宋体'>转换</span></h3>
-
-<h3><span lang=EN-US>Excel2json</span></h3>
-
-<h3><span lang=EN-US>Stock</span><span style='font-family:宋体'>爬取</span></h3>
-
-<h3><span style='font-family:宋体'>农历与公历生日相同</span></h3>
-
-<h2><span style='font-family:宋体'>运维</span></h2>
-
-<h3><span lang=EN-US>Vmware</span><span style='font-family:宋体'>物理化虚拟机</span></h3>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<p class=MsoNormal align=center style='margin-bottom:10.5pt;text-align:center;
+background:white'><span style='font-size:16.5pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>化解依恋冲突：读《亲密关系与情感依赖》</span></p>
+
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>这是一本适合送给前女友和现女友的书，当然，这是一本更值得自己看的书。在感情的世界里，有些冲突似乎来得没有来由，亲密关系的距离似乎也难以捉摸，这本书，解决了我的一些困惑。</span></p>
+<br>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:21.6pt;
+background:white'><b><span style='font-size:13.5pt;font-family:"微软雅黑","sans-serif";
+color:#48B378'>有哪些依恋风格？</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>成年人的依恋有三种主要的风格，它们是安全型、焦虑型以及回避型，还有一种罕见的焦虑回避型。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>焦虑型（“黏人精”）</span></b><span style='font-size:
+12.0pt;font-family:"微软雅黑","sans-serif";letter-spacing:.4pt'>：这种类型很黏人，恨不得和恋人形影不离，但是心里又很忐忑，担心另一半不够投入。他们的感情就像是一张敏感的网，另一半的点点情绪波动都能让他们泛起涟漪。他们非常容易产生情绪波动，甚至会说出一些后悔的话，做出一些后悔的事，他们的情路常常是跌宕起伏的。不过，如果另一半给与了足够的安全感，他们也能摆脱阴霾，重新走上坦途。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>安全型（“保温瓶”）</span></b><span style='font-size:
+12.0pt;font-family:"微软雅黑","sans-serif";letter-spacing:.4pt'>：这种类型温暖又细腻，他们是恋爱中的守护者。享受亲密，但又不失分寸，面对情感的波折，总能从容地应对，不会轻易失落和沮丧。他们和伴侣的交流非常畅通，既能有效传达自己的需求和感受，也能细腻地捕捉到另一半的情绪。既能和伴侣共享生活的喜与悲，也能相互扶持，是爱情里可靠的港湾。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>回避型（“独行侠”）</span></b><span style='font-size:
+12.0pt;font-family:"微软雅黑","sans-serif";letter-spacing:.4pt'>：这种类型，独立和保持自我价值是最重要的，太过亲密，反而会让他们不适。在他们心里，爱情和自由都是同等重要的，他们不愿意被感情的锁链束缚。他们小心翼翼地守护个人的独立空间，对于另一半的任何控制企图都极度敏感。他们很难敞开心扉，很多时候显得疏离。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>焦虑回避型（“矛盾体”）</span></b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";letter-spacing:.4pt'>：这种类型最少见，也是最矛盾最拉扯的一种，他们既渴望与另一半的亲密无间，又害怕失去自我，这种拉扯让他们像在漩涡中心。另一半的细微举动，都可能激起他们敏感的波澜，让他们在依恋和独立之间摇摆不定。内心渴慕陪伴，又在亲密降临的时候想逃离，就像一个天秤，他们努力在亲密与自由之间找到微妙的平衡。</span></p>
+<br>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:18.0pt;
+background:white'><b><span style='font-size:13.5pt;font-family:"微软雅黑","sans-serif";
+color:#48B378'>焦虑型依恋风格：与危险的第六感共舞</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>“一切的快乐与痛苦，都源于所恋之物。”</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>焦虑型依恋风格的恋爱，常常像李宗盛的歌里唱的那样：“在爱情里受苦……”，焦虑型依恋就是这样一种很容易沉沦爱的苦海的类型。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>我们可能有这样的朋友，俗称“恋爱脑”，陷入爱河，就难以自拔。她们邂逅了一个心动的男孩，这个男孩可能带点神秘感、带点艺术感，她们情难自抑地升温，无时无刻不在想着靠近他，一颗心几乎要放在他的身上，但是一有风吹草动，她们可能就忍不住地胡思乱想，甚至会愤怒，会抓狂。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>其实，所谓的“恋爱脑”，就是典型的焦虑型依恋：对伴侣的每一个细微动作都异常敏感，极易陷入过度解读与忧虑之中。这种类型的依恋，渴望亲密与肯定，却也易因对方的不经意之举而心生不安，仿佛置身情感的漩涡中心。</span></p>
+<br>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>焦虑型依恋常常容易陷入两极，一端是激活策略，像奋不顾身的飞蛾；一端是防御行为，像难以靠近的刺猬。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>激活策略</span></b><span style='font-size:12.0pt;
+font-family:"微软雅黑","sans-serif";letter-spacing:.4pt'>：就是焦虑型依恋的人为了拉近和伴侣的距离、减轻自己的不安，会不由自主做的一些事情。比如满脑子都是另一半；脑子里只有<span
+lang=EN-US>TA</span>的好；高估对方，小看自己；真命天子<span lang=EN-US>/</span>天女症状；即使不开心也不分手……</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>防御行为</span></b><span style='font-size:12.0pt;
+font-family:"微软雅黑","sans-serif";letter-spacing:.4pt'>：如果焦虑型依恋的依恋需要没有得到满足，在不安和焦虑的驱使下，会做出一系列的防御行为。比如拼命给对方发信息、打电话；对方冷淡了，自己也故意不理睬；有个小本本，记着对方犯的错；直接摆臭脸，发脾气；拿分手来威胁对方；用别的异性让对方吃醋……通俗来说，就是“作”。</span></p>
+<br>
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>焦虑型依恋类型，很容易在恋爱中滑入到一个“不安地带”，要想缓解这种焦虑，就要去建立一段建立坚实信任和有效沟通基础上的关系，就像给<span
+lang=EN-US>ta</span>们建立了一个安全港。<span lang=EN-US><br>
+</span>这种安全港怎么建立呢？</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>一条路是“外求于人”，找到一位安全型的恋人，但是，安全型依恋的人，亲密关系通常比较稳定，进入自由婚恋市场的概率比较低。而且，焦虑型和回避型常常相互吸引，一个追，一个逃，常常陷入拉扯之中――这是一种类似爱情的感觉。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>一条路是“内求于己”，正视并接受自己的真实恋爱需求，建立对自我的认同；尽可能避开回避型人格，不要落入亲密陷阱；做自己，保持自我的内核稳定；“冒烟的枪”，心不放在同一个地方。</span></p>
+<br>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:18.0pt;
+background:white'><b><span style='font-size:13.5pt;font-family:"微软雅黑","sans-serif";
+color:#48B378'>回避型依恋风格：孤身远走的旅人</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>“你说你想要逃，偏偏注定要落脚……”，回避型依恋就是这样一种落了脚又想逃的类型。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>回避型依恋风格的人，在亲密关系中，像是在荒野中独自远行的旅者。他们崇尚独立，对亲密依恋有着一份不易察觉的疏离。他们的旅途，常常是在追求一种无需依赖他人的情感自足。也许在生命的尾声，躺在床榻闭上眼睛之前，回顾过往，才会恍然大悟：原来生命的所有的风景，有了和他人的交集和分享，才被赋予了意义。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>回避型依恋，在亲密关系中，常常表现出这些“回避特征”。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>拒人千里之外</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>回避型依恋风格的人，常常有一种拒人千里之外的意味。他们可能在情感上与情侣保持距离，不愿意开放自己，害怕暴露弱点，不愿意分享内心深处的想法和感受，逃避讨论深层次的情感话题。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>他们可能对伴侣的依赖行为表现出不耐烦，甚至反感，认为独立和自我依靠才是安全和强大的标志，却往往忽略了人类天性中对亲密和归属感的内在需求。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>以我为例，在之前的一段感情里，很多关于情感的负面的想法，避而不谈，“你到底在想什么？我根本不知道。”我听到过很多次这种提问甚至质问，我自己有以后有一种被逼到边角的感觉，同时也激发了我的抗拒，我更加地拒绝交流，导致很多次的矛盾，都从小溪流升级到大洪水，反反复复在分手的边缘挣扎。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>貌合神离，两败俱伤</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>他们倾向于放大伴侣的缺点，而忽视或低估对方的优点，这种“只见蛀虫，不见硕果”的思维模式，让他们在关系中难以感到满足，总是觉得“下一个会更好”。这种心态不仅影响了对现有伴侣的正面评价，也使得他们难以在关系中找到真正的幸福和满足感。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>同样命中了我，在上一段感情里，到了后来，只能看到她的敏感、暴躁、黏人……忽视了她的真诚、干练、热情……分手后，有段时间我都不怎么愿意正视这段回忆，过年回家，我妈跟我说：“<span
+lang=EN-US>XX</span>，<span lang=EN-US>M</span>律师人挺好的……”我才一下子缓过神来，她其实也有许多好的一面，只是大家这段路没走好散了而已。我也不能为她做什么，就像这篇文章开头写的那样，送她这本书吧，希望她自己能变好，也能遇到好的人。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>去激活策略</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>回避型人格怎么“逃”呢？他们擅长使用“去激活策略“。所谓去激活策略，就是指一系列遏制亲密感发生的行为或思维，就像是升温的时候自己给自己泼的凉水。常用的去激活策略包括：延迟承诺，哪怕是一段长期的关系；放大伴侣缺点；幽灵前任；与他人调情，制造情感距离；情感表达保留，不愿意说”我爱你“；突然抽离，浪漫之后突然冷漠；无望的恋情，开展没有未来的感情；保留秘密；抗拒亲密接触。<span
+lang=EN-US><br>
+</span>这些策略虽然短期内能帮助他们维持一种自我感觉的控制和安全，但长远来看，却阻碍了深层次的情感连接和关系的健康发展。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>其实所谓的去激活策略，我理解是一种情感和需要的压抑。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>幽灵前任、理想型幻想</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>回避型依恋者还经常陷入对前任的美化回忆或对理想伴侣的不切实际幻想，这实际上是一种逃避现实亲密关系的方式，他们用“幽灵前任”和“理想型伴侣”的幻想来逃避当前关系中的不完美，以及面对真实情感需求时的不安。这种做法不仅让自己错失了珍惜眼前人的机会，也让现任伴侣感到被忽视和不被珍视。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>迟钝的情感信号解读</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>回避型的人，在感情里，很多时候也像个接收情感信号不良的电台，他们对情侣的一些情绪波动会显得迟钝，他们可能会觉得，不用太在乎别人的感受。那件事情与自己无关，对方有义务照顾自己的感受。这种理解能力的匮乏，会导致另一半觉得冷落和孤独，温暖、亲密的感觉也随之锐减。</span></p>
+
+<br>
+<p class=MsoNormal align=left style='text-align:left;line-height:18.0pt;
+background:white'><b><span style='font-size:13.5pt;font-family:"微软雅黑","sans-serif";
+color:#48B378'>安全型依恋风格：享受亲密关系</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>如果说焦虑型和回避型的歌，多少带着点苦涩和落寞，我一时想不起，安全型应该配什么样的歌词呢？想了好一会，只能想起邓丽君的《甜蜜蜜》吧。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>要写安全型依恋风格的人群，实在是有些无聊。毕竟他们好像没什么可说的。安全型依恋风格的人，非常可靠、稳定，也值得信赖。他们在恋爱中，既不会一味回避亲密感，也不会为爱而失去理智。总之，恋爱关系中的安全型人群全然不会带有很强的戏剧性，不会高低起伏，也不会产生“过山车般”这类的形容词。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>安全型的人群，外在可能并不统一，他们可能是内敛的书生，可能是社交的明星，也可能是豁达的智者，他们的形态各异，但是内核是统一的，他们对亲密的自然接纳、对伴侣情绪的敏感倾听、沟通的坦诚，让他们对爱的亲近更加开放，对威胁的更不敏感，让他们成为亲密关系里“安全的港湾”。</span></p>
+
+<br>
+<p class=MsoNormal align=center style='text-align:center;line-height:18.0pt;
+background:white'><b><span style='font-size:13.5pt;font-family:"微软雅黑","sans-serif";
+color:#48B378'>依恋风格间的冲突</span></b></p>
+
+<p class=MsoNormal style='line-height:18.0pt;background:white'><b><span
+style='font-size:13.5pt;font-family:"微软雅黑","sans-serif";color:#48B378'>焦虑<span
+lang=EN-US>-</span>回避型陷阱</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>在几种依恋风格里，焦虑型和回避型这两种完全对立的依恋类型，偏偏很容易相互吸引，但是甜蜜的开始，常常伴随着痛苦的结束，从“相爱”到“相杀”，这是一段布满荆棘的道路。</span></p>
+<br>
+
+<p class=MsoNormal style='line-height:18.0pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#48B378'>从相爱开始：依恋风格万有引力定律</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>尽管焦虑型和回避型在亲密需求上看似背道而驰，但却常常又相互吸引，就像是吸引力的万有引力定律。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>风格的互补</span></b><span style='font-size:12.0pt;
+font-family:"微软雅黑","sans-serif";letter-spacing:.4pt'>：焦虑型的人追求的紧密的联系与情感的安全性，而回避型则更偏爱自由与个人空间。偏偏这种对立的需求仿佛磁铁的磁铁，尽管方向相反，却奇妙地相互吸引。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>供需的微妙平衡</span></b><span style='font-size:
+12.0pt;font-family:"微软雅黑","sans-serif";letter-spacing:.4pt'>：焦虑型的热烈与依赖，恰好满足了回避型偶尔对被关注的微妙需求，而回避型的独立自主，又激起了焦虑型内心的挑战欲与征服感，二者在这样的动态中形成了一个微妙的平衡点，就像捉迷藏的小孩，一个躲，一个找，游戏在紧张和期待中展开。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>焦虑型在与回避型的恋爱过程中，会因为依恋的碰撞，产生一种恋爱的激情的错觉。焦虑型在对方的若即若离中，情感产生一种过山车一般的体验，那些不规律的联系方式和模糊信号，激发了他们的依恋机制，让他们在不安与渴望中挣扎。回避型偶尔的温柔，又让他们熄灭的火苗重新摇曳，让焦虑型在患得患失中不断寻找安全感的证明。这种情感波折中，有时焦虑型会做出一些令人费解的行为。某种程度上，依恋机制将这种动荡的情绪误认为恋爱的激情。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>心理学上有个“吊桥效应”，走过公园桥、矮石桥、高空吊桥的不同男性中，走高空吊桥的那组，心跳加速、呼吸急促，更容易被解读为爱意的发生。同样地，在焦虑与回避的互动中，情感的波动与生理的反应可能被解读为爱的火花，让双方在“魔咒”般的循环中徘徊。</span></p>
+<br>
+
+<p class=MsoNormal style='line-height:18.0pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#48B378'>到相杀结束：焦虑<span
+lang=EN-US>-</span>回避型陷阱</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>焦虑型和回避型的依恋冲突，就像是一种“舞伴效应”，回避型想逃，焦虑型想追，在追与逃得游戏种，焦虑型更加焦虑，回避型更加想逃，进入情绪<span
+lang=EN-US>-</span>行为得恶行循环。<span lang=EN-US><br>
+</span>具体来说，焦虑<span lang=EN-US>-</span>回避型，经常出现的一些问题：</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>“过山车”效应</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>情感关系就像坐山车一样起起伏伏，总是在激情澎湃和冷漠疏离中起落。在这种摆荡中，情感最终变得摇摇欲坠。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>情感“跷跷板”</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>焦虑型依恋的一方常常感到自卑，而回避型则在对方的依赖中找到比较高自我价值感，这种不对等加剧了情感的动荡。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>长久不稳定</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>尽管时间在往前走，双方得关系却始终如浮萍般无法安定，双方在不断的拉扯中寻找那个几乎不存在的平衡点。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>争吵只是表象</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>表面的争吵不过是冰山一角，隐藏其下的，是对亲密距离的不同需求和理解的偏差。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>最亲密的敌人</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>焦虑型在寻求亲近时，往往会遭遇回避型的冷淡，感受到对方像敌人般的疏离。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>落入亲密陷阱</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>即便深知对方并不合适，但是一想到分开更加痛苦，形成一种矛盾的心理牢笼。</span></p>
+<br>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:18.0pt;
+background:white'><b><span style='font-size:13.5pt;font-family:"微软雅黑","sans-serif";
+color:#48B378'>如何逃离焦虑<span lang=EN-US>-</span>回避陷阱？</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>面对双方的依恋冲突，解决的关键之道，在于理解依恋风格的可塑性和稳定型之间的微妙平衡。尽管个人的依恋风格可能长久维持，但并非固定不变，通过积极的策略，伴侣可以共同努力，朝着建立安全型关系迈进。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>识别和学习安全型角色模型</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>从周围安全型依恋的人群中汲取灵感，无论是家庭成员、朋友，甚至是和宠物的相处之道，都能成为学习的源泉。通过观察他们的交流方式、应对冲突的策略以及表达关爱和支持的行为，个人可以逐步内化这些正面模式，形成自己的安全型模板。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>重构内在的“安全模式”</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>这意味着深入理解自己在亲密关系中的核心认知和行为习惯，尤其是那些可能削弱安全感的思维和反应模式。通过创建一份详细的亲密关系目录，记录过去和现在伴侣间的关键事件、反应及其背后的依恋机制，可以增进自我觉察。在此过程中，识别和挑战那些非安全型行为，如焦虑型的过度担忧和控制，或回避型的逃避和贬低，进而寻找更为健康的应对策略。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>引入外部支持</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>引入外部支持，比如心理咨询师或了解你依恋风格的亲友作为顾问，可以提供新的视角和反馈，帮助你在情感波动时保持理性，转向更为安全的互动方式。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>调整日常互动</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>在日常的实践中，可以固定一些互动的模式，比如爱的信息、恋爱记录、个人空间设定等等，这些微小的改变，常常能起到显著的正向作用。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>接纳和调整预期</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>当改变的动力不足或双方差异很明显的时候，那重要的是接受现实并调整个人期望。学会在必要时自我满足、独立成长，同时也珍惜和感激伴侣在关系中的正面贡献。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol;letter-spacing:
+.4pt'>・<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+color:#4A4A4A;letter-spacing:.4pt'>无可挽回，明智放手</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>如果事情真的到了不可收拾的地步，不管怎么努力，事情都无法挽回，再多纠缠只能两败俱伤，那么互相宽恕，彼此放手，就成了明智的选择。</span></p>
+
+<br>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:18.0pt;
+background:white'><b><span style='font-size:13.5pt;font-family:"微软雅黑","sans-serif";
+color:#48B378'>如何构建安全的亲密关系？</span></b></p>
+
+<p class=MsoNormal style='line-height:18.0pt;background:white'><b><span
+style='font-size:13.5pt;font-family:"微软雅黑","sans-serif";color:#48B378'>有效沟通</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>构建安全的亲密关系，最关键的一点是有效沟通，让信息流动起来。有效沟通有两个主要目标：</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>找到合适的伴侣</span></b><span style='font-size:12.0pt;
+font-family:"微软雅黑","sans-serif";letter-spacing:.4pt'>：通过有效沟通，我们可以迅速判断对方是否能满足我们的亲密需求。五分钟有效的沟通，比一个月无效的试探更能揭示真相。如果对方回避或无视我们的需求，那么这段关系可能并不适合我们。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>确认关系是否满足需求</span></b><span style='font-size:12.0pt;
+font-family:"微软雅黑","sans-serif";letter-spacing:.4pt'>：无论是新恋情还是长期关系，有效沟通都能帮助双方了解并满足彼此的需求。勇敢地说出自己的需求，不仅有助于伴侣更好地理解我们，也能让关系更健康的成长。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>有效沟通的魔力，在于它能将砒霜转化为蜜糖，让我们在关系中摆脱被动，建立自信。有效沟通提供了一个窗口，通过对方的反馈，能映射出自己在对方心中的位置，判断关系的前景。<span
+lang=EN-US><br>
+</span>实现有效沟通的前提，是理解并尊重依恋风格的多样性。焦虑型渴望持续的亲密确认，而回避型则偏好适度的距离，两种风格各有所需。<span
+lang=EN-US><br>
+</span>那应该如何有效沟通呢？用互联网黑话说，可以通过这些抓手，来形成一个闭环：</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>保持内心坦诚</span></b><span style='font-size:12.0pt;font-family:
+"微软雅黑","sans-serif";letter-spacing:.4pt'>：保持真挚和诚恳，勇敢地袒露自己的情感，内外如一才能让自己和谐，让对方尊重。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>明确需要</span></b><span style='font-size:12.0pt;font-family:
+"微软雅黑","sans-serif";letter-spacing:.4pt'>：清晰地表示自己的需要和期望，同时也要考虑对方的感受，确保沟通是双向的。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>强调重点</span></b><span style='font-size:12.0pt;font-family:
+"微软雅黑","sans-serif";letter-spacing:.4pt'>：明确指出具体的行为或情境如何影响你，帮助对方准确理解问题所在。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>避免责备</span></b><span style='font-size:12.0pt;font-family:
+"微软雅黑","sans-serif";letter-spacing:.4pt'>：采用非暴力的语言，不要让对方感受到被攻击，而是共同探讨解决方案。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>建立框架</span></b><span style='font-size:12.0pt;font-family:
+"微软雅黑","sans-serif";letter-spacing:.4pt'>：初期可以套基础沟通框架，在情绪稳定的时候进行，可以寻求安全型依恋风格的朋友的帮助。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>实战演练</span></b><span style='font-size:12.0pt;font-family:
+"微软雅黑","sans-serif";letter-spacing:.4pt'>：通过不断实践，将有效沟通技巧内化为自然反应。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>正面示范</span></b><span style='font-size:12.0pt;font-family:
+"微软雅黑","sans-serif";letter-spacing:.4pt'>：通过自己的沟通方式为伴侣树立良好的榜样。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>持续优化</span></b><span style='font-size:12.0pt;font-family:
+"微软雅黑","sans-serif";letter-spacing:.4pt'>：在实践中反思沟通效果，不断优化策略，让自己的沟通更加自然高效。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>正如《非暴力沟通》一书里，提出了非暴力沟通四部曲，不带评判的观察、描述真实的感受、表达背后的需要、提出正面的请求――有效的沟通方法都是类似的。</p>
+<br>
+
+<p class=MsoNormal style='line-height:18.0pt;background:white'><b><span
+style='font-size:13.5pt;font-family:"微软雅黑","sans-serif";color:#48B378'>解决冲突</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>在恋爱关系中，人们常常有一个误区，认为没有争执表明关系质量更高，在依恋理论里，冲突的存在与否并非是衡量关系健康的唯一标准，关键在于冲突的处理方式与本质。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>冲突可分两类：一是日常琐碎的“基本生计型”，虽可能引发暂时的不适，却为双方提供了宝贵的磨合契机，能让人学会妥协与理解；二是深入情感层面的“亲密导向型”，触及了关系的本质需求与期待。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>安全型依恋个体擅长平息冲突，他们能在争执中展现同理心，考虑对方立场，这种能力虽看似天赋，实际可以通过观察与学习习得。依恋风格具有可塑性，意味着任何人都能通过学习新技能来改善亲密关系，无论何时开始都不晚。因此，重要的是如何通过冲突增进理解与亲密，而非避免冲突本身。</span></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>解决冲突的安全型法则包括五项核心原则：</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>基于对方幸福考量</span></b><span style='font-size:12.0pt;
+font-family:"微软雅黑","sans-serif";letter-spacing:.4pt'>：在冲突中重视伴侣的感受，寻找双赢解决方案，确保双方需求都被尊重和满足。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>专注于问题本身</span></b><span style='font-size:12.0pt;
+font-family:"微软雅黑","sans-serif";letter-spacing:.4pt'>：避免情绪化的偏题，集中讨论当前争议的核心，不引入无关议题，以理性态度处理分歧。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>限制冲突扩散</span></b><span style='font-size:12.0pt;font-family:
+"微软雅黑","sans-serif";letter-spacing:.4pt'>：及时阻止争执升级，避免小事变大，通过冷静处理维护关系和谐，减少不必要的伤害。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>相互包容</span></b><span style='font-size:12.0pt;font-family:
+"微软雅黑","sans-serif";letter-spacing:.4pt'>：展现宽容心态，接纳对方的不完美，通过理解与忍让减轻矛盾，增强双方的情感连接。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;background:
+white'><span lang=EN-US style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";
+letter-spacing:.4pt'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#4A4A4A;
+letter-spacing:.4pt'>有效沟通感受与需求</span></b><span style='font-size:12.0pt;
+font-family:"微软雅黑","sans-serif";letter-spacing:.4pt'>：开诚布公地交流个人感受和需求，使用“<span
+lang=EN-US>I</span>”语句减少指责，增进相互理解，寻找共同点，促进问题解决。</span></p>
+<br>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:18.0pt;
+background:white'><b><span style='font-size:13.5pt;font-family:"微软雅黑","sans-serif";
+color:#48B378'>写在最后</span></b></p>
+
+<p class=MsoNormal style='line-height:21.6pt;background:white'><span
+style='font-size:12.0pt;font-family:"微软雅黑","sans-serif";color:#3F3F3F;
+letter-spacing:.25pt'>亲密关系是个很复杂的课题，理论很复杂，实践更加地复杂，希望我们都能在未来的路上，更加安全，更加自如！</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"微软雅黑","sans-serif"'>&nbsp;</span></p>
 
 </div>
 
